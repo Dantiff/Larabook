@@ -1,4 +1,5 @@
 <?php
+namespace Larabook\Forms;
 
 use Laracasts\Validation\FormValidator;
 
@@ -8,6 +9,7 @@ use Laracasts\Validation\FormValidator;
  * Date: 9/3/16
  * Time: 2:30 PM
  */
+//
 class RegistrationForm extends FormValidator
 {
     protected $rules = [

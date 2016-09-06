@@ -6,8 +6,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"laracasts/commander": "1.0.*",
-		"laracasts/validation": "1.1"
+		"laracasts/commander": "~1.0",
+		"laracasts/validation": "1.1.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -19,7 +19,7 @@
 			"app/tests/TestCase.php"
 		],
 		"psr-4": {
-			"mymedia.app\\": "app/mymedia.app"
+			"Larabook\\": "app/Larabook"
 		}
 	},
 	"scripts": {
@@ -42,7 +42,7 @@
 	"require-dev": {
 		"way/generators": "~2.0",
 		"codeception/codeception": "~2.0",
-		"laracasts/testdummy": "1.0.*"
+		"laracasts/testdummy": "~1.0"
 	}
 
 }
