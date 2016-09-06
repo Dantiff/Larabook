@@ -2,19 +2,23 @@
 
 use Larabook\Forms\RegistrationForm;
 use Larabook\Registration\RegisterUserCommand;
-use Laracasts\Commander\CommandBus;
+use Larabook\Core\CommandBus;
 
 class RegistrationController extends \BaseController {
 
 
 
+    use CommandBus;
+
+
+
     private $registrationForm;
 
-    private $commandBus;
 
-    function __construct(CommandBus $commandBus, RegistrationForm $registrationForm)
+
+    function __construct(RegistrationForm $registrationForm)
     {
-        $this -> commandBus = $commandBus;
+
         $this->registrationForm = $registrationForm;
     }
 
@@ -43,14 +47,16 @@ class RegistrationController extends \BaseController {
 
 	    extract(Input::only('username', 'email', 'password'));
 
-        $user = $this->commandBus->execute (
+        $user = $this->execute (
             new RegisterUserCommand($username, $email, $password)
         );
 
 
         Auth::login($user);
 
-		return Redirect::home();
+        Flash::message('Glad to have you as a larabook member!');
+
+		return Redirect::home()->with('flash_message', 'Welcome aboard');
 	}
 
 
