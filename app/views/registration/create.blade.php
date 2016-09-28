@@ -37,10 +37,11 @@
             <div class="form-group">
                 {{ Form::submit ('Sign Up', ['class' =>'btn btn-primary']) }}
             </div>
-        </div>
-        </div>
+
 
 
     {{ Form::close() }}
+    </div>
+    </div>
 
 @stop
