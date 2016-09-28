@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23efd4f-9b3f-475e-9b0b-e668cd12bd03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/SessionsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sessions/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fixtures.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/partials/nav.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BaseController.php" afterPath="$PROJECT_DIR$/app/controllers/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistrationController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistrationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/registration/create.blade.php" afterPath="$PROJECT_DIR$/app/views/registration/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/Helper/Functional.php" afterPath="$PROJECT_DIR$/tests/_support/Helper/Functional.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/functional/SignUpCept.php" afterPath="$PROJECT_DIR$/tests/functional/SignUpCept.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php" afterPath="$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/fixtures.yml" afterPath="$PROJECT_DIR$/tests/fixtures.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/functional.suite.yml" afterPath="$PROJECT_DIR$/tests/functional.suite.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/functional/SighInCept.php" afterPath="$PROJECT_DIR$/tests/functional/SighInCept.php" />
     </list>
     <ignored path="mymedia.app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,33 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegistrationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/RegistrationController.php">
+      <file leaf-file-name="SessionsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="e#7#43#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Larabook/Users/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="165">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunctionalTester.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/_support/FunctionalTester.php">
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="435">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -71,8 +51,8 @@
       <file leaf-file-name="Functional.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/_support/Helper/Functional.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="49" />
               <folding>
                 <element signature="e#25#70#0#PHP" expanded="true" />
               </folding>
@@ -80,62 +60,214 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="functional.suite.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/functional.suite.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env.testing.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.testing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_09_02_155213_create_table_user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2016_09_02_155213_create_table_user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_09_03_105227_create_users_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fixtures.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/fixtures.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SighInCept.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/functional/SighInCept.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
+      <file leaf-file-name="FunctionalTesterActions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laracasts/testdummy/src/Laracasts/TestDummy/Factory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/registration/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="4" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="448">
+              <caret line="2385" column="5" selection-start-line="2385" selection-start-column="5" selection-end-line="2385" selection-end-column="5" />
+              <folding>
+                <marker date="1475081723000" expanded="true" signature="77066:117678" ph="{...}" />
+                <marker date="1475081723000" expanded="true" signature="77076:77811" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="77866:77980" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="77992:78343" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="78388:78501" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="78513:78813" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="78860:78975" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="78987:79454" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="79508:79620" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="79632:80032" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="80097:80217" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="80229:81052" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="81118:81239" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="81251:81856" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="81927:82044" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="82056:82724" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="82781:82895" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="82907:83376" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="83443:83562" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="83574:84331" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="84400:84514" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="84526:84744" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="84790:84905" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="84917:85460" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="85523:85634" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="85646:86008" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="86068:86180" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="86192:86724" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="86786:86911" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="86920:87392" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="87451:87565" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="87577:88034" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="88097:88226" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="88235:88632" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="88695:88813" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="88825:89201" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="89260:89373" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="89385:90183" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="90252:90378" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="90387:91125" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="91191:91306" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="91318:91991" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="92061:92191" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="92200:92813" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="92883:93002" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="93014:93630" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="93699:93834" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="93843:94399" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="94465:94589" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="94601:95077" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="95148:95283" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="95292:95708" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="95776:95900" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="95912:96400" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="96472:96611" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="96620:97048" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="97120:97248" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="97260:97536" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="97581:97712" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="97721:97937" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="97979:98099" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="98111:98442" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="98494:98627" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="98636:98907" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="98956:99078" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="99090:99512" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="99558:99684" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="99693:100055" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="100098:100213" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="100225:100562" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="100609:100739" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="100748:101025" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="101072:101191" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="101203:101663" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="101709:101825" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="101837:102071" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="102127:102237" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="102249:102538" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="102612:102726" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="102738:103033" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="103110:103227" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="103239:103550" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="103622:103734" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="103746:104038" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="104113:104228" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="104240:104541" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="104620:104739" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="104751:104923" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="105002:105121" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="105133:105450" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="105536:105662" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="105674:105853" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="105939:106065" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="106077:106372" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="106448:106564" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="106576:106887" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="106970:107093" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="107105:107396" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="107472:107588" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="107600:107902" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="107981:108100" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="108112:108401" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="108474:108588" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="108600:108896" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="108972:109089" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="109101:109352" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="109414:109527" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="109539:109797" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="109862:109978" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="109990:110238" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="110299:110411" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="110423:110678" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="110742:110857" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="110869:111126" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="111190:111302" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="111314:111572" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="111637:111750" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="111762:112011" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="112080:112198" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="112210:112469" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="112541:112662" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="112674:112904" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="112991:113114" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="113126:113353" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="113437:113557" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="113569:113767" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="113835:113950" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="113962:114183" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="114261:114380" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="114392:114616" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="114697:114819" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="114831:115053" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="115132:115250" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="115262:115487" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="115569:115690" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="115702:115925" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="116005:116125" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="116137:116343" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="116382:116488" ph="..." />
+                <marker date="1475081723000" expanded="true" signature="116500:117495" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+                <marker date="1475081723000" expanded="true" signature="117558:117675" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,14 +289,12 @@
         <option value="$PROJECT_DIR$/Gulpfile.js" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/.env.testing.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/mymedia.app/Forms/RegistrationForm.php" />
         <option value="$PROJECT_DIR$/app/Forms/RegistrationForm.php" />
         <option value="$PROJECT_DIR$/app/larabook/Forms/RegistrationForm.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/errors.blade.php" />
         <option value="$PROJECT_DIR$/app/assets/sass/main.scss" />
-        <option value="$PROJECT_DIR$/tests/functional.suite.yml" />
         <option value="$PROJECT_DIR$/app/Larabook/Registration/RegisterUserCommand.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/config/auth.php" />
@@ -182,15 +312,18 @@
         <option value="$PROJECT_DIR$/app/views/registration/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/tests/functional/SignUpCept.php" />
-        <option value="$PROJECT_DIR$/tests/fixtures.yml" />
         <option value="$PROJECT_DIR$/app/views/registration/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sessions/create.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/SessionsController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/tests/_support/Helper/Functional.php" />
-        <option value="$PROJECT_DIR$/tests/functional/SighInCept.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/app/Larabook/Users/User.php" />
+        <option value="$PROJECT_DIR$/tests/fixtures.yml" />
+        <option value="$PROJECT_DIR$/tests/_support/Helper/Functional.php" />
+        <option value="$PROJECT_DIR$/tests/functional/SighInCept.php" />
+        <option value="$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php" />
+        <option value="$PROJECT_DIR$/tests/functional.suite.yml" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php" />
       </list>
     </option>
   </component>
@@ -575,6 +708,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mymedia.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mymedia.app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mymedia.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mymedia.app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -587,7 +760,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="TestDummy\/F&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/vendor/laracasts/testdummy/src/Laracasts/TestDummy/Factory.php&#10;sess&#9;null&#9;null&#10;testdummy/fa&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/vendor/laracasts/testdummy/src/Laracasts/TestDummy/Factory.php&#10;rou&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/routes.php&#10;basecon&#9;null&#9;null&#10;app.p&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/config/app.php&#10;user&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/Larabook/Users/User.php&#10;valida&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/vendor/laracasts/validation/src/Laracasts/Validation/FormValidationException.php&#10;global&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/start/global.php&#10;use&#9;null&#9;null&#10;pa&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/controllers/PagesController.php&#10;hom&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/views/pages/home.blade.php&#10;regist&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/controllers/RegistrationController.php&#10;create_user&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/database/migrations/2016_09_03_105227_create_users_table.php&#10;composer.&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/composer.json&#10;nav&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/views/layouts/partials/nav.php" />
+    <property name="SearchEverywhereHistoryKey" value="ses&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/controllers/SessionsController.php&#10;rout&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/routes.php&#10;TestDummy\/F&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/vendor/laracasts/testdummy/src/Laracasts/TestDummy/Factory.php&#10;sess&#9;null&#9;null&#10;testdummy/fa&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/vendor/laracasts/testdummy/src/Laracasts/TestDummy/Factory.php&#10;rou&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/routes.php&#10;basecon&#9;null&#9;null&#10;app.p&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/config/app.php&#10;user&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/Larabook/Users/User.php&#10;valida&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/vendor/laracasts/validation/src/Laracasts/Validation/FormValidationException.php&#10;global&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/start/global.php&#10;use&#9;null&#9;null&#10;pa&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/controllers/PagesController.php&#10;hom&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/views/pages/home.blade.php&#10;regist&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/controllers/RegistrationController.php&#10;create_user&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/database/migrations/2016_09_03_105227_create_users_table.php&#10;composer.&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/composer.json&#10;nav&#9;FILE&#9;file:///Users/daniel/Projects/mymedia.app/app/views/layouts/partials/nav.php" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
@@ -684,16 +857,16 @@
       <workItem from="1474526045382" duration="469000" />
       <workItem from="1474536362133" duration="47000" />
       <workItem from="1474989466271" duration="80000" />
-      <workItem from="1475079664764" duration="58000" />
+      <workItem from="1475079664764" duration="2597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61742000" />
+    <option name="totallyTimeSpent" value="64281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="31" width="900" height="919" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21444444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -701,7 +874,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.49462366" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.49462366" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -732,31 +905,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/acceptance.suite.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit.suite.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2016_09_02_155213_create_table_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -785,13 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.testing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -924,13 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/functional.suite.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/functional/SignUpCept.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -942,13 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -984,28 +1115,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/registration/login.blade.php" />
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laracasts/testdummy/src/Laracasts/TestDummy/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1018,24 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_support/Helper/Functional.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="e#25#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/functional/SighInCept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1086,6 +1177,238 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/functional/SighInCept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="2385" column="5" selection-start-line="2385" selection-start-column="5" selection-end-line="2385" selection-end-column="5" />
+          <folding>
+            <marker date="1475081723000" expanded="true" signature="77066:117678" ph="{...}" />
+            <marker date="1475081723000" expanded="true" signature="77076:77811" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="77866:77980" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="77992:78343" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="78388:78501" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="78513:78813" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="78860:78975" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="78987:79454" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="79508:79620" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="79632:80032" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="80097:80217" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="80229:81052" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="81118:81239" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="81251:81856" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="81927:82044" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="82056:82724" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="82781:82895" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="82907:83376" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="83443:83562" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="83574:84331" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="84400:84514" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="84526:84744" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="84790:84905" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="84917:85460" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="85523:85634" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="85646:86008" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="86068:86180" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="86192:86724" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="86786:86911" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="86920:87392" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="87451:87565" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="87577:88034" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="88097:88226" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="88235:88632" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="88695:88813" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="88825:89201" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="89260:89373" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="89385:90183" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="90252:90378" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="90387:91125" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="91191:91306" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="91318:91991" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="92061:92191" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="92200:92813" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="92883:93002" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="93014:93630" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="93699:93834" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="93843:94399" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="94465:94589" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="94601:95077" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="95148:95283" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="95292:95708" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="95776:95900" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="95912:96400" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="96472:96611" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="96620:97048" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="97120:97248" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="97260:97536" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="97581:97712" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="97721:97937" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="97979:98099" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="98111:98442" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="98494:98627" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="98636:98907" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="98956:99078" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="99090:99512" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="99558:99684" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="99693:100055" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="100098:100213" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="100225:100562" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="100609:100739" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="100748:101025" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="101072:101191" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="101203:101663" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="101709:101825" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="101837:102071" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="102127:102237" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="102249:102538" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="102612:102726" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="102738:103033" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="103110:103227" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="103239:103550" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="103622:103734" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="103746:104038" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="104113:104228" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="104240:104541" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="104620:104739" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="104751:104923" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="105002:105121" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="105133:105450" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="105536:105662" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="105674:105853" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="105939:106065" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="106077:106372" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="106448:106564" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="106576:106887" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="106970:107093" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="107105:107396" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="107472:107588" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="107600:107902" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="107981:108100" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="108112:108401" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="108474:108588" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="108600:108896" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="108972:109089" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="109101:109352" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="109414:109527" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="109539:109797" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="109862:109978" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="109990:110238" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="110299:110411" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="110423:110678" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="110742:110857" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="110869:111126" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="111190:111302" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="111314:111572" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="111637:111750" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="111762:112011" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="112080:112198" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="112210:112469" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="112541:112662" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="112674:112904" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="112991:113114" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="113126:113353" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="113437:113557" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="113569:113767" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="113835:113950" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="113962:114183" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="114261:114380" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="114392:114616" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="114697:114819" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="114831:115053" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="115132:115250" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="115262:115487" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="115569:115690" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="115702:115925" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="116005:116125" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="116137:116343" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="116382:116488" ph="..." />
+            <marker date="1475081723000" expanded="true" signature="116500:117495" ph=" [!] Method is generated. Documentation taken from corresponding module. ..." />
+            <marker date="1475081723000" expanded="true" signature="117558:117675" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/_support/Helper/Functional.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="e#25#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/functional.suite.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.testing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2016_09_02_155213_create_table_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2016_09_03_105227_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding />
         </state>
       </provider>
