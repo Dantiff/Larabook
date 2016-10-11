@@ -41,6 +41,8 @@
             @if ($currentUser)
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
+
+                    <li>{{ link_to_route('logout_path', 'Logout') }} </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ $currentUser->username }} <span class="caret"></span></a>
                         <ul class="dropdown-menu">

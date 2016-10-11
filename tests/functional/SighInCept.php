@@ -8,6 +8,6 @@ $I->wantTo('Login to my larabook account');
 $I->signIn();
 
 $I->seeInCurrentUrl('/statuses');
-$I->see('Welcome back!');
+$I->see('I Should Be Here');
 
 $I->assertTrue(Auth::check());

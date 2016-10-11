@@ -3,6 +3,7 @@
 use Larabook\Forms\SignInForm;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash as Flash;
+use Illuminate\Support\Facades\Redirect;
 class SessionsController extends \BaseController
 {
     private $signInForm;
@@ -59,14 +60,14 @@ class SessionsController extends \BaseController
         //if invalid, then go back
         $this->signInForm->validate($formData);
 
-
         //if is valid, the try to sign in
         if (Auth::attempt($formData))
         {
 
-            Flash::message('Welcome back!');
+            Flash::message('Welcome back');
+
             //redirect to statuses
-            return Redirect::to('statuses');
+            return Redirect::intended('statuses');
 
         }
 

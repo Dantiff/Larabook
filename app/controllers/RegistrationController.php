@@ -56,7 +56,7 @@ class RegistrationController extends \BaseController {
 
         Auth::login($user);
 
-        Flash::message('Glad to have you as a larabook member!');
+        Flash::message('Glad to have you as a larabook member');
 
 		return Redirect::home()->with('flash_message', 'Welcome aboard');
 	}

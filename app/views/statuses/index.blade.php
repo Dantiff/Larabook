@@ -1,7 +1,8 @@
-@extends('layouts.default)
+@extends('layouts.default')
 
 @section('content')
-    <h1> I Should Be Here</h1>
+
+    <h1> Post a Status</h1>
 
 
 @stop
