@@ -1,15 +1,20 @@
 <?php
+namespace Larabook\Statuses;
+
 /**
  * Created by PhpStorm.
  * User: daniel
- * Date: 10/11/16
- * Time: 5:19 AM
+ * Date: 9/6/16
+ * Time: 7:41 AM
  */
-
-namespace Larabook\Statuses;
-
-
-class PublishStatusCommand
+class PostStatusCommand
 {
+    public $body;
+
+    function __construct($body)
+    {
+        $this -> body = $body;
+    }
+
 
 }

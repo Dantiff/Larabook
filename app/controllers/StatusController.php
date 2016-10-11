@@ -1,6 +1,7 @@
 <?php
-
+use Larabook\Core\CommandBus;
 class StatusController extends \BaseController {
+    use CommandBus;
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +10,6 @@ class StatusController extends \BaseController {
 	 */
 	public function index()
 	{
-//	    dd('here');
 		return View::make('statuses.index');
 	}
 
@@ -32,7 +32,7 @@ class StatusController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$this->execute(new PublishStatusCommand(Input::get('body')));
 	}
 
 

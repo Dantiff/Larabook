@@ -26,7 +26,22 @@ class Functional extends \Codeception\Module
     public function haveAnAccount($overrides = [])
     {
 
-         TestDummy::create('Larabook\Users\User', $overrides);
+         $this->have('Larabook\Users\User', $overrides);
     }
 
+    public function postAStatus($body)
+    {
+        $I = $this->getModule('Laravel4');
+
+        $I->fillField('Status', $body);
+
+        $I->click('Post Status');
+
+//        $this->have('Larabook\Statuses\Status', $overrides);
+    }
+
+    public function have($model, $overrides = [])
+    {
+       return TestDummy::create($model, $overrides);
+    }
 }
