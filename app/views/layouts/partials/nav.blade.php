@@ -14,7 +14,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                @if ($currentUser)
+                    <li class="active"> {{ link_to_route('statuses_path', 'Statuses') }}</li>
+               @endif
                 <li><a href="#">Link</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Myne <span class="caret"></span></a>
@@ -42,7 +44,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ $currentUser->username }} <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Logout</a></li>
+                            <li>{{ link_to_route('logout_path', 'Logout') }} </li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Another Action</a></li>
                         </ul>
@@ -52,12 +54,8 @@
             @else
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li>
-                        <a href="/login" class="nav navbar-nav navbar-right"> Login</a>
-                    </li>
-                    <li>
-                        <a href="/register" class="nav navbar-nav navbar-right"> Register</a>
-                    </li>
+                    <li>{{ link_to_route('login_path', 'Login') }} </li>
+                    <li>{{ link_to_route('register_path', 'Register') }}</li>
                 </ul>
 
             @endif

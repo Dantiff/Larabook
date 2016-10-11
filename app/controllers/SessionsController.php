@@ -1,12 +1,23 @@
 <?php
 
-class SessionsController extends \BaseController {
+use Larabook\Forms\SignInForm;
+use Illuminate\Support\Facades\Auth;
+use Laracasts\Flash\Flash as Flash;
+class SessionsController extends \BaseController
+{
+    private $signInForm;
 
-
-    public function home()
+    /**
+     * SessionsController constructor.
+     * @param SignInForm $signInForm
+     */
+    public function __construct(SignInForm $signInForm)
     {
+        $this->signInForm = $signInForm;
 
+        $this->beforeFilter('guest', ['except'=>'destroy']);
     }
+
 
     /**
      * Display a listing of the resource.
@@ -32,61 +43,43 @@ class SessionsController extends \BaseController {
 
 
     /**
-     * Store a newly created resource in storage.
+     * fetch the form
+     * validate the form
+     *
      *
      * @return Response
      */
     public function store()
     {
-        //
+
+        //fetch the form
+        $formData = Input::only('email', 'password');
+
+        //validate the form
+        //if invalid, then go back
+        $this->signInForm->validate($formData);
+
+
+        //if is valid, the try to sign in
+        if (Auth::attempt($formData))
+        {
+
+            Flash::message('Welcome back!');
+            //redirect to statuses
+            return Redirect::to('statuses');
+
+        }
+
     }
 
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function show($id)
+    public function destroy()
     {
-        //
-    }
+        Auth::logout();
 
+        Flash::message('You have now been logged out');
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
-    }
-
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy($id)
-    {
-        //
+        return Redirect::home();
     }
 
 
