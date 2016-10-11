@@ -7,13 +7,17 @@ namespace Larabook\Statuses;
  * Date: 9/6/16
  * Time: 7:41 AM
  */
-class PostStatusCommand
+class PublishStatusCommand
 {
     public $body;
 
-    function __construct($body)
+    public $userId;
+
+    function __construct($body, $userId)
     {
         $this -> body = $body;
+
+        $this->userId = $userId;
     }
 
 

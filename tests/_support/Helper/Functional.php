@@ -31,9 +31,9 @@ class Functional extends \Codeception\Module
 
     public function postAStatus($body)
     {
-        $I = $this->getModule('Laravel4');
+        $I = $this->getModule('laravel4');
 
-        $I->fillField('Status', $body);
+        $I->fillField('Status:', $body);
 
         $I->click('Post Status');
 

@@ -21,7 +21,7 @@ class PostStatusesCest
 
         $I->amOnPage('statuses');
 
-        $I->postAStatus(['body'=>'My first post']);
+        $I->postAStatus('body', 'My first post');
 
         $I->seeCurrentUrlEquals('/statuses');
 
