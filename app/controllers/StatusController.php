@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Redirect;
 use Laracasts\Flash\Flash;
 use Larabook\Statuses\StatusRepository;
 use Larabook\Forms\PublishStatusForm;
+use Illuminate\Support\Facades\Input;
 
 class StatusController extends \BaseController
 {

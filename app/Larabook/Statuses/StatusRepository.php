@@ -15,7 +15,7 @@ namespace Larabook\Statuses;
 
     public function getAllForUser(User $user)
     {
-        return $user->statuses();
+        return $user->statuses;
 
     }
 

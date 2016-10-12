@@ -9,15 +9,26 @@ namespace Larabook\Statuses;
  */
 class PublishStatusCommand
 {
+    /**
+     * @var
+     */
     public $body;
 
+    /**
+     * @var
+     */
     public $userId;
 
+    /**
+     * PublishStatusCommand constructor.
+     * @param $body
+     * @param $userId
+     */
     function __construct($body, $userId)
     {
         $this -> body = $body;
 
-        $this->userId = $userId;
+        $this -> userId = $userId;
     }
 
 

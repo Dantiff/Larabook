@@ -9,6 +9,9 @@ namespace Larabook\Statuses\Events;
  */
 class StatusWasPublished
 {
+    /**
+     * @var
+     */
     public $body;
 
     /**

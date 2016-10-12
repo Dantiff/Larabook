@@ -17,6 +17,10 @@ use Larabook\Statuses\Status;
 class PublishStatusCommandHandler implements CommandHandler
 {
     use DispatchableTrait;
+
+    /**
+     * @var StatusRepository
+     */
     protected $statusRepository;
 
     /**
