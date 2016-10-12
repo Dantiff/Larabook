@@ -15,6 +15,9 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	use UserTrait, RemindableTrait, EventGenerator;
 
+    /**
+     * @var array
+     */
     protected $fillable = ['username', 'email', 'password'];
 	/**
 	 * The database table used by the model.
@@ -22,6 +25,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var string
 	 */
 	protected $table = 'users';
+
+    /**
+     * @var string
+     */
+    protected $presenter = 'Larabook\Users\UserPresenter';
 
 	/**
 	 * The attributes excluded from the model's JSON form.

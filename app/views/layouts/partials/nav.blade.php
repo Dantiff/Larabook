@@ -44,7 +44,12 @@
 
                     <li>{{ link_to_route('logout_path', 'Logout') }} </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ $currentUser->username }} <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+
+                            <img class="nav-gravatar" src="{{ $currentUser->present()->gravatar() }}" alt="{{$currentUser->username}}">
+
+                            {{ $currentUser->username }} <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li>{{ link_to_route('logout_path', 'Logout') }} </li>
                             <li role="separator" class="divider"></li>

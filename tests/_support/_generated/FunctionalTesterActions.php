@@ -422,7 +422,7 @@ trait FunctionalTesterActions
      *
      * @see \Helper\Functional::postAStatus()
      */
-    public function postAStatus($overrides = null) {
+    public function postAStatus($body) {
         return $this->getScenario()->runStep(new \Codeception\Step\Action('postAStatus', func_get_args()));
     }
 

@@ -13,7 +13,11 @@ namespace Larabook\Statuses;
  class StatusRepository
 {
 
-    public function getAllForUser(User $user)
+     /**
+      * @param User $user
+      * @return mixed
+      */
+     public function getAllForUser(User $user)
     {
         return $user->statuses;
 
