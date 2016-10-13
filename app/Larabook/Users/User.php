@@ -9,11 +9,12 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 use Larabook\Registration\Events\UserRegistered;
 use Eloquent, Hash;
 use Laracasts\Commander\Events\EventGenerator;
+use Laracasts\Presenter\PresentableTrait;
 
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
-	use UserTrait, RemindableTrait, EventGenerator;
+	use UserTrait, RemindableTrait, EventGenerator, PresentableTrait;
 
     /**
      * @var array

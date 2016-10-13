@@ -9,7 +9,9 @@
 namespace Larabook\Users;
 
 
-class UserPresenter
+use Laracasts\Presenter\Presenter;
+
+class UserPresenter extends Presenter
 {
     function gravatar($size = 30)
     {
