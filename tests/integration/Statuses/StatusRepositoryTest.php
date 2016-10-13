@@ -1,6 +1,7 @@
 <?php
 
 use Larabook\Statuses\StatusRepository;
+use Larabook\Users\UserRepository;
 use Laracasts\TestDummy\Factory as TestDummy;
 
 class StatusRepositoryTest extends \Codeception\TestCase\Test
@@ -15,19 +16,25 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
      */
     protected $repo;
 
+
+    protected $userRepository;
     /**
      * Import user repository
+     *
+     * Before each test, do
      *
      */
     protected function _before()
     {
         $this->repo = new StatusRepository();
 
+        $this->userRepository = new UserRepository();
+
 //        $this->tester->grabService('Larabook\Statuses\StatusRepository');
     }
 
     /**
-     *
+     *Test
      */
     public function test_it_gets_all_statuses_for_a_a_user()
     {
@@ -56,7 +63,7 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
     }
 
     /**
-     *
+     *Test
      */
     public function test_it_saves_status_for_a_user()
     {
@@ -79,4 +86,19 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
         $this->assertEquals($user->id, $savedStatus->user_id);
 
     }
+
+    public function test_it_finds_a_user_with_statuses_by_their_username()
+    {
+        //given
+        $statuses = TestDummy::times(3)->create('Larabook\Statuses\Status');
+        $username = $statuses[0]->user->username;
+
+        //when
+        $user = $this->userRepository->findByUsername($username);
+
+        //then
+        $this->assertEquals($username, $user->username);
+        $this->assertCount(3, $user->statuses);
+    }
+
 }

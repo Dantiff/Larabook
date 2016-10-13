@@ -8,22 +8,20 @@
         <div class="col-md-3">
             <h1> {{ $user->username }}</h1>
 
-            @include('layouts.partials.avatar')
+            @include('layouts.partials.avatar', ['size'=>'100'])
 
         </div>
 
         <div class="col-md-6">
 
-            @foreach($user->statuses as $status )
+            @if($user->is($currentUser))
+                @include('statuses.partials.publish-status-form')
+            @endif
 
-                @include('statuses.partials.status')
+            @include('statuses.partials.statuses', ['statuses'=>$user->statuses])
 
-            @endforeach
         </div>
 
     </div>
-
-
-
 
 @stop
