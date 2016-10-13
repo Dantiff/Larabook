@@ -32,5 +32,15 @@ class UsersController extends \BaseController
 	}
 
 
+    /**
+     * @param $username
+     * @return mixed
+     */
+    public function show($username)
+    {
+        $user = $this->userRepository->findByUsername($username);
+
+        return view::make('users.show')->withUser($user);
+    }
 
 }

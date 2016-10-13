@@ -5,20 +5,25 @@
     <h1> All Users </h1>
 
     @foreach($users->chunk(4) as $userSet)
-        <div class="row users">
+        <div class="row">
             @foreach($userSet as $user)
 
                 <div class="col-md-3 user-block">
 
                     @include ('layouts.partials.avatar', ['size'=>70])
 
-                    <h4 class="user-block-username"> {{ $user->username }} </h4>
+                    {{ link_to_route('profile_path', $user->username, $user->username) }}
+
                 </div>
 
             @endforeach
         </div>
     @endforeach
 
-    {{ $users->links() }}
+    <div class="col-md-4 col-md-offset-4">
+
+        {{ $users->links() }}
+
+    </div>
 
  @stop

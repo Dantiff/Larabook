@@ -8,7 +8,7 @@
 
 namespace Larabook\Users;
 
-
+use Larabook\Users\User;
 
 
 class UserRepository
@@ -29,8 +29,19 @@ class UserRepository
      * @param int $showMany
      * @return mixed
      */
-    public function getPaginated($showMany = 200)
+    public function getPaginated($showMany = 20)
     {
-        return User::paginate($showMany);
+        return User::orderBy('username', 'asc')->simplePaginate($showMany);
+    }
+
+    /**
+     * Find user by username
+     *
+     * @param $username
+     * @return mixed
+     */
+    public function findByUsername($username)
+    {
+        return User::whereUsername($username)->first();
     }
 }

@@ -17,7 +17,7 @@
                 @if ($currentUser)
                     <li class="active"> {{ link_to_route('statuses_path', 'Statuses') }}</li>
                @endif
-                <li><a href="#">Link</a></li>
+                <li class="active"> {{link_to_route('users_path', 'Users')}} </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Myne <span class="caret"></span></a>
                     <ul class="dropdown-menu">
