@@ -9,6 +9,9 @@ use Larabook\Users\User;
 class Functional extends \Codeception\Module
 {
     //create a login function
+    /**
+     *
+     */
     public function signIn()
     {
         $email = 'foo@example.com';
@@ -23,21 +26,32 @@ class Functional extends \Codeception\Module
         $I->click('Sign In');
     }
 
+    /**
+     * @param array $overrides
+     */
     public function haveAnAccount($overrides = [])
     {
 
          $this->have('Larabook\Users\User', $overrides);
     }
 
+    /**
+     * @param $body
+     */
     public function postAStatus($body)
     {
         $I = $this->getModule('laravel4');
 
-        $I->fillField('Status:', $body);
+        $I->fillField('body', $body);
 
         $I->click('Post Status');
     }
 
+    /**
+     * @param $model
+     * @param array $overrides
+     * @return mixed
+     */
     public function have($model, $overrides = [])
     {
        return TestDummy::create($model, $overrides);
