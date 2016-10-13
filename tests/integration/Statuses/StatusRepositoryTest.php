@@ -10,8 +10,15 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
      */
     protected $tester;
 
+    /**
+     * @var
+     */
     protected $repo;
 
+    /**
+     * Import user repository
+     *
+     */
     protected function _before()
     {
         $this->repo = new StatusRepository();
@@ -19,6 +26,9 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
 //        $this->tester->grabService('Larabook\Statuses\StatusRepository');
     }
 
+    /**
+     *
+     */
     public function test_it_gets_all_statuses_for_a_a_user()
     {
         //Given I have two users\
@@ -45,6 +55,9 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
 
     }
 
+    /**
+     *
+     */
     public function test_it_saves_status_for_a_user()
     {
         //Given I have an unsaved status

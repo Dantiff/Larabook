@@ -36,8 +36,6 @@ class Functional extends \Codeception\Module
         $I->fillField('Status:', $body);
 
         $I->click('Post Status');
-
-//        $this->have('Larabook\Statuses\Status', $overrides);
     }
 
     public function have($model, $overrides = [])

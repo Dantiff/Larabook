@@ -22,4 +22,15 @@ class UserRepository
     {
         return $user-> save();
     }
+
+    /**
+     * Get a paginated list of all users
+     *
+     * @param int $showMany
+     * @return mixed
+     */
+    public function getPaginated($showMany = 200)
+    {
+        return User::paginate($showMany);
+    }
 }
