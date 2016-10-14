@@ -65,3 +65,8 @@ Route::post('follows', [
     'as' => 'follows_path',
     'uses' => 'FollowersController@store'
 ]);
+
+Route::delete('follows/{id}', [
+    'as' => 'follow_path',
+    'uses' => 'FollowersController@destroy'
+]);
