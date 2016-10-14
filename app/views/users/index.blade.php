@@ -10,7 +10,7 @@
 
                 <div class="col-md-3 user-block">
 
-                    @include ('layouts.partials.avatar', ['size'=>70])
+                    @include ('users.partials.avatar', ['size'=>70])
 
                     {{ link_to_route('profile_path', $user->username, $user->username) }}
 

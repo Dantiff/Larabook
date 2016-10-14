@@ -56,3 +56,12 @@ Route::get('@{username}', [
     'as'=>'profile_path',
     'uses'=>'UsersController@show'
 ]);
+
+/**
+ * Follos
+ */
+
+Route::post('follows', [
+    'as' => 'follows_path',
+    'uses' => 'FollowersController@store'
+]);
