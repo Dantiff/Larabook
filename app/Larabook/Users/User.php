@@ -89,15 +89,27 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 
     /**
-     * Create relationship to the follows table
+     * Get list of users that the current user follows
      *
      * @return mixed
      */
-    public function follows()
+    public function followedUsers()
     {
         return $this->belongsToMany(self::class, 'follows', 'follower_id', 'followed_id')
             ->withTimestamps();
     }
+
+    /**
+     * Get a list of users following the current user
+     *
+     * @return mixed
+     */
+    public function followers()
+    {
+        return $this->belongsToMany(self::class, 'follows', 'followed_id', 'follower_id')
+            ->withTimestamps();
+    }
+
 
     /**
      * Determine if current user follows another user

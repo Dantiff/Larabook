@@ -1,6 +1,7 @@
 <?php
 
 use Larabook\Users\FollowUsersCommand;
+use Larabook\Users\UnfollowUserCommand;
 
 class FollowersController extends \BaseController {
 
@@ -24,16 +25,21 @@ class FollowersController extends \BaseController {
 	}
 
 
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($idOfUserToUnfollow)
+    /**
+     * Unfollow a user
+     *
+     * @param $userIdToUnfollow
+     * @return mixed
+     */
+    public function destroy($userIdToUnfollow)
 	{
-		//
+        $input = array_add(Input::get(), 'userId', Auth::id());
+
+		$this->execute(UnfollowUserCommand::class, $input);
+
+        Flash::success('You have now unfollowed this user.');
+
+        return Redirect::back();
 	}
 
 

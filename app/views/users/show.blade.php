@@ -5,15 +5,30 @@
 
     <div class="row">
 
-        <div class="col-md-3">
-            <h1> {{ $user->username }}</h1>
+        <div class="col-md-4">
+            <div class="media">
+                <div class="pull-left">
 
-            @include('users.partials.avatar', ['size'=>'100'])
+                    @include('users.partials.avatar', ['size'=>'50'])
 
+                </div>
+                <div class="media-body">
 
-            @unless($user->is($currentUser))
-                @include('users.partials.follow-form')
-            @endunless
+                    <h1> {{ $user->username }}</h1>
+
+                    <p class="text-muted"> {{ $statusCount = $user->statuses->count() }} {{ str_plural('Status', $statusCount) }} </p>
+
+                    @unless($user->is($currentUser))
+                        @include('users.partials.follow-form')
+                    @endunless
+                </div>
+
+            </div>
+
+            @foreach($user->followers as $follower)
+
+            @endforeach
+
         </div>
 
         <div class="col-md-6">
