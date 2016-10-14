@@ -101,4 +101,38 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
         $this->assertCount(3, $user->statuses);
     }
 
+    public function test_it_follows_another_user()
+    {
+        //Given i have two users
+        list($john, $susan) = TestDummy::times(2)->create('Larabook\Users\User');
+
+        //and one user follows another
+        $this->userRepository->follow($susan->id, $john);
+
+        //I should be able to
+        $this->tester->seeRecord('follows', [
+            'follower_id'=>$john->id,
+            'followed_id'=>$susan->id,
+        ]);
+    }
+    public function test_it_unfollows_a_followed_user()
+    {
+        //Given i have two users
+        list($john, $susan) = TestDummy::times(2)->create('Larabook\Users\User');
+
+
+        //and one user follows another
+        $this->userRepository->follow($susan->id, $john);
+
+        //when I unfollow that same user
+        $this->userRepository->unfollow($susan->id, $john);
+
+        //Then i should NOT be able to see that user in the list of those that $user[0] follows
+        $this->tester->dontSeeRecord('follows', [
+            'follower_id'=>$john->id,
+            'followed_id'=>$susan->id,
+        ]);
+    }
+
+
 }

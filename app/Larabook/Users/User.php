@@ -119,7 +119,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
      */
     public function isFollowedBy(User $otherUser)
     {
-        $ideWhoOtherUserFollows = $otherUser->follows()->lists('followed_id');
+        $ideWhoOtherUserFollows = $otherUser->followedUsers()->lists('followed_id');
 
         return in_array($this->id, $ideWhoOtherUserFollows);
     }

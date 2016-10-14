@@ -14,24 +14,34 @@
                 </div>
                 <div class="media-body">
 
-                    <h1> {{ $user->username }}</h1>
+                    <h1 class="media-heading"> {{ $user->username }}</h1>
 
-                    <p class="text-muted"> {{ $statusCount = $user->statuses->count() }} {{ str_plural('Status', $statusCount) }} </p>
+                    <ul class="list-inline">
+                        <li class="text-muted"> {{ $user->present()->statusCount()  }} </li>
 
-                    @unless($user->is($currentUser))
-                        @include('users.partials.follow-form')
-                    @endunless
+                        <li class="text-muted"> {{ $user->present()->followerCount() }} </li>
+
+                    </ul>
+
+
+                    @foreach($user->followers as $follower)
+
+                        @include('users.partials.avatar', ['size'=>'25', 'user'=>$follower])
+
+                    @endforeach
+
                 </div>
 
             </div>
 
-            @foreach($user->followers as $follower)
-
-            @endforeach
-
         </div>
 
         <div class="col-md-6">
+
+            @unless($user->is($currentUser))
+                @include('users.partials.follow-form')
+            @endunless
+
 
             @if($user->is($currentUser))
                 @include('statuses.partials.publish-status-form')
