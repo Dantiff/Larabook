@@ -10,11 +10,13 @@ use Larabook\Registration\Events\UserRegistered;
 use Eloquent, Hash;
 use Laracasts\Commander\Events\EventGenerator;
 use Laracasts\Presenter\PresentableTrait;
+use Larabook\Users\FollowableTrait;
+
 
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
-	use UserTrait, RemindableTrait, EventGenerator, PresentableTrait;
+	use UserTrait, RemindableTrait, EventGenerator, PresentableTrait, FollowableTrait;
 
     /**
      * @var array
@@ -85,43 +87,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         if (is_null($user)) return false;
 
         return $this->username == $user->username;
-    }
-
-
-    /**
-     * Get list of users that the current user follows
-     *
-     * @return mixed
-     */
-    public function followedUsers()
-    {
-        return $this->belongsToMany(self::class, 'follows', 'follower_id', 'followed_id')
-            ->withTimestamps();
-    }
-
-    /**
-     * Get a list of users following the current user
-     *
-     * @return mixed
-     */
-    public function followers()
-    {
-        return $this->belongsToMany(self::class, 'follows', 'followed_id', 'follower_id')
-            ->withTimestamps();
-    }
-
-
-    /**
-     * Determine if current user follows another user
-     *
-     * @param User $otherUser
-     * @return bool
-     */
-    public function isFollowedBy(User $otherUser)
-    {
-        $ideWhoOtherUserFollows = $otherUser->followedUsers()->lists('followed_id');
-
-        return in_array($this->id, $ideWhoOtherUserFollows);
     }
 
 
