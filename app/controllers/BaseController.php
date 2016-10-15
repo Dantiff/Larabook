@@ -18,6 +18,7 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 
+		View::share('isSignedIn', Auth::user());
 		View::share('currentUser', Auth::user());
 	}
 
