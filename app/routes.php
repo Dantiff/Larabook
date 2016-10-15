@@ -1,6 +1,9 @@
 <?php
 
-
+/**
+ * Paswword resets
+ */
+Route::controller('password', 'RemindersController');
 
 Route::get('/', [
     'as' => 'home',
