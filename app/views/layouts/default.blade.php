@@ -24,11 +24,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script> $('#flash-overlay-modal').modal(); </script>
 <script>
+    $('#flash-overlay-modal').modal();
+
     $(document).ready(function() {
         $(".dropdown-toggle").dropdown();
     });
+
+    $('.comments__create-form').on('keydown', function (e) {
+
+        if (e.keyCode == 13){
+
+            e.preventDefault();
+            $(this).submit();
+        }
+        
+    });
 </script>
+
 </body>
 </html>

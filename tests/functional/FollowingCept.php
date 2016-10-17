@@ -14,14 +14,13 @@ $I->seeCurrentUrlEquals('/@OtherUser');
 //When I follow other users
 $I->click('Follow OtherUser');
 $I->seeCurrentUrlEquals('/@OtherUser');
-
-$I->see('You are following other user');
-$I->dontSee('Follow OtherUser');
-$I->see('Unfollow OthersUser');
+$I->see('You are now following this user.');
+$I->see('Follow OtherUser');
+$I->dontSee('Unfollow OthersUser');
 
 //When i unfollow other users
-$I->click('Unfollow OthersUser');
 $I->seeCurrentUrlEquals('/@OtherUser');
-$I->dontSee('Unfollow OtherUser');
-
-//Expectation
+$I->see('Unfollow OtherUser');
+$I->click('Unfollow OtherUser');
+$I->see('You have now unfollowed this user.');
+$I->seeCurrentUrlEquals('/@OtherUser');

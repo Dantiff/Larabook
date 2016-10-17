@@ -10,4 +10,4 @@ $I->signIn();
 $I->seeInCurrentUrl('/statuses');
 $I->see('Post a Status');
 
-//$I->assertTrue(Auth::check());
+$I->assertTrue(Auth::check());

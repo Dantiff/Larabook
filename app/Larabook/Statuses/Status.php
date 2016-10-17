@@ -16,10 +16,9 @@ use Laracasts\Presenter\PresentableTrait;
 class Status extends \Eloquent
 {
     use EventGenerator, PresentableTrait;
-    /*
+    /**
      * Fillable fields for a new status
      */
-
     protected $fillable = ['body'];
 
     /**
@@ -51,5 +50,15 @@ class Status extends \Eloquent
     {
         return $this->belongsTo('Larabook\Users\User');
     }
+
+    /**
+     * @return mixed
+     */
+    public function comments()
+    {
+        return $this->hasMany('Larabook\Statuses\Comment');
+    }
+
+
 
 }

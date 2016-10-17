@@ -18,16 +18,6 @@
                     <li class="active"> {{ link_to_route('statuses_path', 'Statuses') }}</li>
                @endif
                 <li class="active"> {{link_to_route('users_path', 'Users')}} </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Myne <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">separated link</a></li>
-                    </ul>
-                </li>
             </ul>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
@@ -38,7 +28,6 @@
 
             @if ($currentUser)
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
 
                     <li>{{ link_to_route('logout_path', 'Logout') }} </li>
                     <li class="dropdown">

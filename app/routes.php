@@ -48,6 +48,13 @@ Route::post('statuses', [
     'uses' => 'StatusesController@store'
 ]);
 
+Route::post('statuses/{id}/comments', [
+    'as' => 'comments_path',
+    'uses' => 'CommentsController@store'
+]);
+
+
+
 //Users
 
 Route::get('users', [
@@ -61,7 +68,7 @@ Route::get('@{username}', [
 ]);
 
 /**
- * Follos
+ * Follows
  */
 
 Route::post('follows', [

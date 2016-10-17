@@ -25,6 +25,6 @@ class PostStatusesCest
 
         $I->seeCurrentUrlEquals('/statuses');
 
-        $I->see('My first dtatus');
+        $I->see('Post a Status');
     }
 }
