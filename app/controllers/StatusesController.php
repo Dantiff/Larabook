@@ -42,9 +42,16 @@ class StatusesController extends \BaseController
 	 */
 	public function index()
 	{
-	    $statuses = $this->statusRepository->getFeedForUser(Auth::user());
+	    if (!Auth::user())
+        {
+            return Redirect::to('/');
+        }
+        else{
+            $statuses = $this->statusRepository->getFeedForUser(Auth::user());
 
-		return View::make('statuses.index', compact('statuses'));
+            return View::make('statuses.index', compact('statuses'));
+
+        }
 	}
 
 
