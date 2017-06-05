@@ -1,3 +1,13 @@
+## Larabook
+A complete blogging application. The app is powered by PHP (Laravel) and a combination of HTML, CSS, and JavaScript and has been architected to form a light version of Facebook, called Larabook. Other development technologies used include:
+
+* `Vagrant and Laravel Homestead` as the virtual machine
+* `Composer` for dependency management
+* `Twitter Bootstrap` css framework
+* `MySQL` database, configurations in `.env.*.php` files
+* `Gulp` for css and JS module bundling
+* `Twitter Bootstrap` css framework
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
