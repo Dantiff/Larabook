@@ -8,6 +8,72 @@ A complete blogging application. The app is powered by PHP (Laravel) and a combi
 * `Gulp` for css and JS module bundling
 * `Twitter Bootstrap` css framework
 
+## Features Included:
+
+### 1. Registration with BDD
+
+Naturally, before a user can begin posting status updates, they first need to register for Larabook. 
+
+### 2. Registration Validation
+
+Of course, form validation is essential for any web app. Larabook is no different.
+
+### 3. Domain Events
+Creation, queueing, and listening for domain events. 
+
+### 4. Super Easy Flash Messaging
+
+Very important for notifying users on system actions and responses.
+
+### 5. Signing In
+
+Now that a user can successfully register, we next need to give them a way to login and logout!
+
+### 6. Functional tests
+
+Functional tests implemented using Laravel's Codeception.
+
+### 7. Publishing Statuses
+
+Authenticated users can publish statuses to their profile. 
+
+### 8. Integration Testing Repositories
+
+Codeception configured to execute integration tests.
+
+### 9. Gravatars and View Presenters
+
+Rather than making Larabook users upload profile images, the application simply leverage the popular Gravatar service. 
+
+### 10. Dummy Users and Statuses
+
+Use of Laravel Eloquent's Seeders to create dummy database records.
+
+### 11. Browsing Users With Pagination
+
+Use of Laravel Paginator to paginate frontend page views.
+
+### 12. Profiles
+
+Personalized profiles for each users with profile editing functions.
+
+### 13. Following Users
+
+Functionality allowing Larabook users to follow one another. This way, in their respective feeds, they can see, not only their own statuses, but all the statuses of those they follow. 
+
+### 14. Handlers & Mailers
+
+Using event handlers and mailers to email user when they sign up for Larabook.
+
+### 15. The Password Reset Process
+
+What if one of our Larabook members forgets their password? The app allows users to comfortably reset their passwords.
+
+### 16. Status Comments
+
+Users have the ability to comment on existing statuses. 
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
