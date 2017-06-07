@@ -6,6 +6,7 @@ A complete blogging application. The app is powered by PHP (Laravel) and a combi
 * `Twitter Bootstrap` css framework
 * `MySQL` database, configurations in `.env.*.php` files
 * `Gulp` for css and JS module bundling
+* `Gulp, Sass and Autoprefixing` for watching Sass files for changes, compile them, and then autoprefix any relevant CSS3
 * `Twitter Bootstrap` css framework
 
 ## Features Included:
